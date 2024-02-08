@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en"data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix-Anime</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .swiper-button-next::after {
+        font-size: 30px;
+    }
+
+    .swiper-button-prev::after {
+        font-size: 30px;
+    }
+    @media (min-width: 420px) {
+        .swiper-button-next::after{
+            font-size: 38px;
+        }
+        .swiper-button-prev::after {
+        font-size: 38px;
+    }
+}
+</style>
+<body>
+    <nav class="">
+        <div class="max-w-7xl mx-auto rounded-lg">
+            <div class="flex justify-between items-center py-4 px-2">
+                <div class="flex items-center text-lg">
+                    <a class="btn btn-ghost overflow-hidden h-16 w-16 relative"><img src="Logo.png"
+                            alt="" class="w-16 h-14 absolute"></a>
+                </div>
+                <!-- this is menu page -->
+                <div class="text-sm lg:text-xl">               
+                    <a href="Homepage.html" class="mx-2 border-b-2 border-blue-700 capitalize truncate">Home</a>
+                    <a href="Allanime.html" class="mx-2 hover:border-b-2 hover:border-yellow-700 capitalize truncate">All Anime</a>
+                </div>
+                <!-- menu page end-->
+                <div class="flex-none gap-4 flex">
+                    <div class="form-control">
+                        <input type="text" placeholder="Search" class="input input-bordered  md:block hidden" />
+                    </div>
+                    <div class="navbar-end flex">
+                        <button class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                        <button class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                                </svg>
+                                <span class="badge badge-xs badge-warning indicator-item"></span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img src="Rectangle 3.png" />
+                            </div>
+                        </div>
+                        <ul tabindex="0"
+                            class="mt-3 z-[15] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                            <li>
+                                <a class="justify-between">
+                                    Profile
+                                    <span class="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a href="favourite.html">Favourite</a></li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End nav-bar -->
+
+    <!-- Content heading -->
+    <div class="">
+        <div class="py-4 px-2 max-w-7xl mx-auto flex justify-between overflow-hidden">
+            <h3 class="font-bold text-lg ssm:text-2xl text-slate-300 capitalize">anime of the week</h3>
+            <div class="flex  w-24 relative">
+                <div class="swiper-button-next  after:text-blue-500"></div>
+                <div class="swiper-button-prev  after:text-blue-500"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End heading Content -->
+
+    <!-- Swiper -->
+    <section class="">
+        <div class="max-w-7xl mx-auto mt-2 overflow-hidden">
+            <div class="swiper1 w-full h-80 overflow-hidden px-10">
+                <div class="swiper-wrapper object-fill mx-auto">
+                    <div
+                        class="swiper-slide items-center justify-center flex bg-Back1 bg-cover bg-center ml-2 rounded-md h-full">
+                    </div>
+                    <div
+                        class="swiper-slide items-center justify-center flex bg-Back2 bg-cover bg-center ml-2 rounded-md h-full">
+                    </div>
+                    <div
+                        class="swiper-slide items-center justify-center flex bg-Back3 bg-cover bg-center ml-2 rounded-md h-full">
+                    </div>
+                    <div
+                        class="swiper-slide items-center justify-center flex bg-Back4 bg-cover bg-center ml-2 rounded-md h-full">
+                    </div>
+                    <div
+                        class="swiper-slide items-center justify-center flex bg-Back5 bg-cover bg-center ml-2 rounded-md h-full">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Swiper End-->
+
+    <!-- Head-Recomended -->
+    <div class="py-4 px-2 max-w-7xl mx-auto flex justify-between overflow-hidden">
+        <h3 class="font-bold text-lg ssm:text-2xl text-slate-300 capitalize">anime recomended</h3>
+    </div>
+    <!-- Head-Recomended end-->
+
+    <section>
+        <div class="px-2 max-w-7xl mx-auto overflow-hidden grid  grid-cols-1 ssm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pb-6">
+
+        <div class="text-center h-auto overflow-hidden">
+            <div
+            class="w-48 h-36 bg-Baki bg-cover bg-top  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-auto sxm:w-44 sxm:h-44 ssm:w-40 ssm:h-36 md:w-60 md:h-64 xl:w-72 xl:h-80 hover:scale-105 transition duration-1000 ease-in-out">
+        </div>
+        <a href="#" class="md:text-base xl:text-xl block mt-1 capitalize hover:text-white transition ">baki hanma</a>
+        </div>
+        <!-- 1 -->
+        <div class="text-center h-auto overflow-hidden">
+            <div
+            class="w-48 h-36 bg-TheDanger bg-cover bg-top  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-auto sxm:w-44 sxm:h-44 ssm:w-40 ssm:h-36 md:w-60  md:h-64 xl:w-72 xl:h-80 hover:scale-105 transition duration-1000 ease-in-out">
+        </div>
+        <a href="#" class="md:text-base xl:text-xl block mt-1 capitalize hover:text-white transition truncate">The Dangers in My Heart</a>
+        </div>
+        <!-- 2 -->
+        <div class="text-center h-auto overflow-hidden">
+            <a href="jujuEp1.html">
+                <div
+            class="w-48 h-36 bg-Jujut bg-cover bg-top  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-auto sxm:w-44 sxm:h-44 ssm:w-40 ssm:h-36 md:w-60  md:h-64 xl:w-72 xl:h-80 hover:scale-105 transition duration-1000 ease-in-out">
+        </div>
+            </a>
+        <a href="jujuEp1.html" class="md:text-base xl:text-xl block mt-1 capitalize hover:text-white transition truncate">jujutsu kaisen</a>
+        </div>
+        <!-- 3 -->
+        <div class="text-center h-auto overflow-hidden">
+            <div
+            class="w-48 h-36 bg-frie bg-cover bg-top  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-auto sxm:w-44 sxm:h-44 ssm:w-40 ssm:h-36 md:w-60  md:h-64 xl:w-72 xl:h-80 hover:scale-105 transition duration-1000 ease-in-out">
+        </div>
+        <a href="#" class="md:text-base xl:text-xl block mt-1 capitalize hover:text-white transition truncate">Frieren: Beyond Journey's End</a>
+        </div>
+        <!-- 4 -->
+        <div class="text-center h-auto overflow-hidden">
+            <div
+            class="w-48 h-36 bg-mashel bg-cover bg-center  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-auto sxm:w-44 sxm:h-44 ssm:w-40 ssm:h-36 md:w-60  md:h-64 xl:w-72 xl:h-80 hover:scale-105 transition duration-1000 ease-in-out">
+        </div>
+        <a href="#" class="md:text-base xl:text-xl block mt-1 capitalize hover:text-white transition truncate">mashle</a>
+        </div>
+        <!-- 5 -->
+        <div class="text-center h-auto overflow-hidden">
+            <div
+            class="w-48 h-36 bg-doc bg-cover bg-top  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-auto sxm:w-44 sxm:h-44 ssm:w-40 ssm:h-36 md:w-60  md:h-64 xl:w-72 xl:h-80 hover:scale-105 transition duration-1000 ease-in-out">
+        </div>
+        <a href="#" class="md:text-base xl:text-xl block mt-1 capitalize hover:text-white transition truncate">doctor stone</a>
+        </div>
+        <!-- 6 -->
+        <div class="text-center h-auto overflow-hidden">
+            <div
+            class="w-48 h-36 bg-hai bg-cover bg-top  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-auto sxm:w-44 sxm:h-44 ssm:w-40 ssm:h-36 md:w-60  md:h-64 xl:w-72 xl:h-80 hover:scale-105 transition duration-1000 ease-in-out">
+        </div>
+        <a href="#" class="md:text-base xl:text-xl block mt-1 capitalize hover:text-white transition truncate">haikyuu!!</a>
+        </div>
+        <!-- 7 -->
+        <div class="text-center h-auto overflow-hidden">
+            <div
+            class="w-48 h-36 bg-titan bg-cover bg-top  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-auto sxm:w-44 sxm:h-44 ssm:w-40 ssm:h-36 md:w-60  md:h-64 xl:w-72 xl:h-80 hover:scale-105 transition duration-1000 ease-in-out">
+        </div>
+        <a href="#" class="md:text-base xl:text-xl block mt-1 capitalize hover:text-white transition truncate">actack on titan final</a>
+        </div>
+        <!-- 8 -->
+        </div>
+    </section>
+    <div class="py-2">
+        <ul class="flex mx-auto w-48   md:w-8/12 lg:w-9/12 xl:w-7/12">
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12 md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none "><a href="#" class="">1</a></li>
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12  md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none "><a href="#" class="">2</a></li>
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12 md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none "><a href="#" class="">3</a></li>
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12 md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none "><a href="#" class="">4</a></li>
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12 md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none  hidden md:block"><a href="#" class="">5</a></li>
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12 md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none  hidden md:block"><a href="#" class="">7</a></li>
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12 md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none  hidden md:block"><a href="#" class="">8</a></li>
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12 md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none  hidden md:block"><a href="#" class="">9</a></li>
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12 md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none  hidden md:block"><a href="#" class="">10</a></li>
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12 md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none  hidden md:block"><a href="#" class="">11</a></li>
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12 md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none  hidden md:block"><a href="#" class="">12</a></li>
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12 md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none "><a href="#" class="">...</a></li>
+                <li class="w-10 border-blue-700 border text-center truncate  md:w-10/12 md:py-2 md:mx-1 lg:w-6/12 lg:mx-2 hover:bg-slate-100 hover:text-black transition ease-in-out duration-300 hover:-translate-y-1 hover:border-none "><a href="#" class="">122</a></li>
+            </ul>
+    </div>
+    <!-- Tap link -->
+    <footer class="py-3 px-2 lg:py-4 xl:py-6 lg:mt-10">
+        <div class="max-w-7xl mx-auto  justify-between flex items-center border-t-2">
+            <p class="text-xs md:text-lg lg:text-2xl ssm:pt-3 ">Copyright © Phoenix-Anime All Rights Reserved</p>
+            <div class="text-right ssm:pt-3">
+                <i class="fa-brands fa-square-facebook text-lg md:text-2xl md:mr-2 lg:text-5xl hover:text-blue-700 transition duration-700"></i>
+                <i class="fa-brands fa-square-twitter text-lg md:text-2xl lg:text-5xl hover:text-blue-700 transition duration-700"></i>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper1', {
+            slidesPerView: 2,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
+            },
+        });
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+            return direction;
+        }
+    </script>
+</body>
+
+</html>
